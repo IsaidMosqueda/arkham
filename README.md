@@ -31,6 +31,10 @@ functionalities as well as use the chatbot on any file you want, with a set of m
 ## Research
 In the research folder you may find all the steps that lead to the definition of the modules, feel free to check them. Certain files are 
 to big to be added, if any file is required please feel free to get it from [here](https://drive.google.com/drive/folders/15VJ6cmEudKIdbpz6Je8InFuVsz6vsvyy?usp=sharing).
+In particular, you have to download the folder [`checkpoint-240`](https://drive.google.com/drive/folders/1jNJfAGMfMH40363cWkSaEpfA9djfKEhW?usp=drive_link) 
+and store it on the directory you may be calling it, 
+and the file [`CONTRATO...pdf`](https://drive.google.com/file/d/1MHQ6fbMer2S0jCXACSHMie0pq4KOj9No/view?usp=drive_link) to re run the OCR implementations,
+saving it as well on the directory from where you may be calling it.
 
 ## Note
 If it's the first time that you run the ´falcon´model, it's necessary that you firstly install the falcon7b-Instruct model manually, to do that run the following code after installing the library:
