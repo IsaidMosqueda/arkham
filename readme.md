@@ -5,11 +5,11 @@ won't consider the max_lenght when creating the vector space when running the to
 to change that go to the file `env/lib/python3.10/site-packages/trl/trainer/utils.py`  and replace 
 the line `272` from:
 
-```
+```python
 tokenized_inputs = self.tokenizer(buffer, truncation=False)["input_ids"]
 ```
 
 to:
-```
+```python
 tokenized_inputs = self.tokenizer(buffer, truncation=True,max_length=self.seq_length)["input_ids"]
 ```
