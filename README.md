@@ -1,6 +1,6 @@
 # Instalation
 In order to install and use this library to it's full capacity, you must follow these steps:
-1. Install poppler with `apt-get install poppler-utils` or `brew install poppler` on mac.
+1. Install poppler with `sudo apt-get install poppler-utils` or `brew install poppler` on mac.
 2. Install tesseract with `sudo apt-get install tesseract-ocr-spa` or `brew install tesseract` on mac.
 
 3. Install the library with the command:
@@ -36,7 +36,7 @@ and store it on the directory you may be calling it,
 and the file [`CONTRATO...pdf`](https://drive.google.com/file/d/1MHQ6fbMer2S0jCXACSHMie0pq4KOj9No/view?usp=drive_link) to re run the OCR implementations,
 saving it as well on the directory from where you may be calling it.
 
-## Note
+## Notes
 If it's the first time that you run the ´falcon´model, it's necessary that you firstly install the falcon7b-Instruct model manually, to do that run the following code after installing the library:
 
 ```python
@@ -45,4 +45,10 @@ from transformers import AutoModelForCausalLM,AutoTokenizer
 model_id="tiiuae/falcon-7b-instruct"
 tokenizer=AutoTokenizer.from_pretrained(model_id)
 model=AutoModelForCausalLM.from_pretrained(model_id, trust_remote_code=True)
+```
+
+If you want to use the `GPT3.5` model, make sure to have your OpenAI key loaded in 
+your enviroment with the following name:
+```bash
+OPENAI_API_KEY = 'your key'
 ```
