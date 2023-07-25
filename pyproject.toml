@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "arkham"
+version = "0.1.0"
+description = "Arkham API containing funcitonality for OCR document parsing and LLMs based chatbots."
+authors = ["IsaidMosqueda <isaid_herondale@ciencias.unam.mx>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
