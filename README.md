@@ -31,3 +31,14 @@ functionalities as well as use the chatbot on any file you want, with a set of m
 ## Research
 In the research folder you may find all the steps that lead to the definition of the modules, feel free to check them. Certain files are 
 to big to be added, if any file is required please feel free to get it from [here](https://drive.google.com/drive/folders/15VJ6cmEudKIdbpz6Je8InFuVsz6vsvyy?usp=sharing).
+
+## Note
+If it's the first time that you run the ´falcon´model, it's necessary that you firstly install the falcon7b-Instruct model manually, to do that run the following code after installing the library:
+
+```python
+from transformers import AutoModelForCausalLM,AutoTokenizer
+
+model_id="tiiuae/falcon-7b-instruct"
+tokenizer=AutoTokenizer.from_pretrained(model_id)
+model=AutoModelForCausalLM.from_pretrained(model_id, trust_remote_code=True)
+```
